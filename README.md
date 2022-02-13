@@ -1,1 +1,1 @@
-https://ahj10.herokuapp.com/
+https://viktorka1347.github.io/ahj-10/
