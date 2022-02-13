@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: black;
+    font: inherit;
+    background-color: transparent;
+}
+
+body {
+    background-color: white;
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+input::placeholder {
+    color: #C0C0C0;
+}
+
+button:hover {
+    background-color: yellow;
+}
+
+#container {
+    width: 500px;
+    margin: 50px auto;
+}
+
+.time-line-widget .posts {
+    padding-left: 50px;
+    max-height: 700px;
+    overflow-y: auto;
+}
+
+.time-line-widget .video {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 5px 0 5px;
+}
+
+.time-line-widget .form {
+    display: flex;
+    border: 1px solid black;
+}
+
+.time-line-widget .text {
+    display: block;
+    flex-grow: 1;
+    height: 1em;
+    padding: 1em;
+}
+
+.time-line-widget .form button {
+    display: block;
+    width: 2.2em;
+    height: 2.2em;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.time-line-widget img {
+    display: block;
+    margin: 0 auto;
+}
+
+.time-line-widget .text-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.time-line-widget .button-audio {
+    margin-right: 0.5em;
+}
+
+.time-line-widget .button-video {
+    margin-right: 0.5em;
+}
+
+.time-line-widget .record-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.time-line-widget .hidden {
+    display: none;
+}
+
+.time-line-widget .button-ok {
+    margin-right: 0.8em;
+}
+
+.time-line-widget .button-cancel {
+    margin-right: 0.5em;
+    font-weight: bold;
+}
+
+.time-line-widget .timer {
+    margin-right: 0.8em;
+}
+
+.post-widget {
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 1em;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.post-widget:last-child {
+    margin-bottom: 45px;
+}
+
+.post-widget:before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    bottom: -45px;
+    left: -30px;
+    width: 10px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    background-color: white;
+}
+
+.post-widget:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -35px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.post-widget .left-panel {
+    flex: 1 1 auto;
+    padding-top: 1em;
+    overflow-x: auto;
+}
+
+.post-widget .position {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    margin: 1.2em 0 1em 0;
+}
+
+.post-widget .eye {
+    margin: 0 0 0 1em;
+}
+
+.post-widget .right-panel {
+    flex: 0 0 auto;
+    margin-left: 1em;
+}
+
+.post-widget .datetime {
+    font-size: 0.8em;
+    margin-top: 0.7em;
+}
+
+.audio-widget .button-play {
+    font-size: 2em;
+    width: 2em;
+    height: 2em;
+    margin-bottom: 0.2em;
+    padding-left: 0.1em;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.audio-widget .progress {
+    display: block;
+    width: 100%;
+}
+
+.video-widget .video-frame {
+    position: relative;
+}
+
+.video-widget .button-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    width: 2em;
+    height: 2em;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.video-widget .button-play:hover {
+    background-color: yellow;
+}
+
+.video-widget .progress {
+    display: block;
+    width: 100%;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.geolocation-form {
+    width: 400px;
+    padding: 0 1.2em;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.geolocation-form p {
+    margin-top: 1.2em;
+}
+
+.geolocation-form .position {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 0.8em;
+    padding: 0.5em 0.8em;
+    border: 1px solid black;
+}
+
+.geolocation-form .error {
+    margin: 0.5em 0 0 1em;
+    font-size: 0.8em;
+    color: red;
+}
+
+.geolocation-form .buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.4em 0 0.8em 0;
+}
+
+.geolocation-form .button-ok,
+.geolocation-form .button-cancel {
+    display: block;
+    padding: 0.8em 1em;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.geolocation-form .button-ok {
+    margin-left: 0.8em;
+}
+
+.audio-video-form {
+    width: 400px;
+    padding: 0 1.2em;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.audio-video-form p {
+    margin-top: 1.2em;
+}
+
+.audio-video-form .buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.2em 0 0.8em 0;
+}
+
+.audio-video-form .button-ok {
+    display: block;
+    padding: 0.8em 1em;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
